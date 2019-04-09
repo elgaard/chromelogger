@@ -73,8 +73,8 @@
         if (typeof(rows[0]=="string")) rows=[rows];
         for (i = 0; i < length; i++) {
             var row = rows[i],
-                backtrace = rows[column_map.backtrace],
-                label = rows[column_map.label],
+                backtrace = row[column_map.backtrace],
+                label = row[column_map.label],
                 log = row[column_map.log],
                 type = row[column_map.type] || 'log';
 
